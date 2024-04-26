@@ -1,0 +1,20 @@
+
+  
+  .error {
+    display: none;
+    color: red;
+  }
+  
+  .success {
+    display: none;
+    color: green;
+  }
+  
+  .input-group {
+    margin-bottom: 10px;
+  }
+  
+  #all-good {
+    margin-bottom: 10px;
+  }
+  
