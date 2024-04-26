@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form id="signup-form">
+    <div class="input-group">
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email" placeholder="Example@gmail.com" required><br>
+      <p class="error" id="email-error">Email must be at least 3 characters and contain "@" and "."</p> 
+      
+    </div>
+    <div class="input-group">
+      <label for="password">Password</label><br>
+      <input type="password" id="password" name="password" placeholder="Your Password" required><br>
+      <p class="error" id="password-error">Password must be at least 8 characters long</p>
+   
+      
+    </div>
+    <p id="all-good" class="success">All good to go!</p> 
+    <button type="submit" id="submit-btn">Submit</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
