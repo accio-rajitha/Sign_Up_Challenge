@@ -55,6 +55,17 @@ submitBtn.addEventListener('click', function (event) {
         const confirmation = confirm('Are you sure you want to login?');
         if (confirmation) {
             alert('Successful login!');
+            // Clear input fields
+            emailInput.value = '';
+            passwordInput.value = '';
+            // Reset error and success indicators
+            document.querySelectorAll('.error').forEach(element => {
+                element.style.display = 'none';
+            });
+            document.querySelectorAll('.success').forEach(element => {
+                element.style.display = 'none';
+            });
+            allGood.style.display = 'none';
         }
     } else {
         // Clear input fields
