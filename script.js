@@ -4,12 +4,12 @@ function validateEmail(email) {
     return regex.test(email);
 }
 
-// Password input validation function
+
 function validatePassword(password) {
     return password.length >= 8;
 }
 
-// Event listeners for input fields
+
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
 const allGood = document.getElementById('all-good');
@@ -46,19 +46,19 @@ function updateAllGood() {
     }
 }
 
-// Event listener for submit button
+
 const submitBtn = document.getElementById('submit-btn');
 submitBtn.addEventListener('click', function (event) {
-    event.preventDefault(); // Prevent form submission
+    event.preventDefault(); 
     
     if (validateEmail(emailInput.value) && validatePassword(passwordInput.value)) {
         const confirmation = confirm('Are you sure you want to login?');
         if (confirmation) {
             alert('Successful login!');
-            // Clear input fields
+            
             emailInput.value = '';
             passwordInput.value = '';
-            // Reset error and success indicators
+            
             document.querySelectorAll('.error').forEach(element => {
                 element.style.display = 'none';
             });
@@ -68,10 +68,10 @@ submitBtn.addEventListener('click', function (event) {
             allGood.style.display = 'none';
         }
     } else {
-        // Clear input fields
+      
         emailInput.value = '';
         passwordInput.value = '';
-        // Reset error and success indicators
+       
         document.querySelectorAll('.error').forEach(element => {
             element.style.display = 'none';
         });
