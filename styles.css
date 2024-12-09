@@ -1,4 +1,6 @@
-
+*{
+  margin: 5px;
+}
   
   .error {
     display: none;
@@ -12,6 +14,14 @@
   
   .input-group {
     margin-bottom: 10px;
+  }
+  #submit-btn{
+    background-color: #fff;
+    color: #000;
+    margin-left: 10px;
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
   }
   
   #all-good {
