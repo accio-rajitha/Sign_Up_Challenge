@@ -4,11 +4,9 @@ function validateEmail(email) {
     return regex.test(email);
 }
 
-
 function validatePassword(password) {
     return password.length >= 8;
 }
-
 
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
@@ -46,7 +44,6 @@ function updateAllGood() {
     }
 }
 
-
 const submitBtn = document.getElementById('submit-btn');
 submitBtn.addEventListener('click', function (event) {
     event.preventDefault(); 
@@ -59,25 +56,12 @@ submitBtn.addEventListener('click', function (event) {
             emailInput.value = '';
             passwordInput.value = '';
             
-            document.querySelectorAll('.error').forEach(element => {
-                element.style.display = 'none';
-            });
-            document.querySelectorAll('.success').forEach(element => {
+            document.querySelectorAll('p').forEach(element => {
                 element.style.display = 'none';
             });
             allGood.style.display = 'none';
         }
     } else {
-      
-        emailInput.value = '';
-        passwordInput.value = '';
-       
-        document.querySelectorAll('.error').forEach(element => {
-            element.style.display = 'none';
-        });
-        document.querySelectorAll('.success').forEach(element => {
-            element.style.display = 'none';
-        });
-        allGood.style.display = 'none';
+        alert('Please ensure all fields are valid.');
     }
 });
