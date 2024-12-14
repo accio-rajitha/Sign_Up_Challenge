@@ -1,15 +1,23 @@
 *{
   margin: 5px;
 }
+form{
+  padding: 15px;
+}
+button{
+  margin-left: 10px;
+}
   
   .error {
     display: none;
     color: red;
+    
   }
   
   .success {
     display: none;
     color: green;
+    
   }
   
   .input-group {
